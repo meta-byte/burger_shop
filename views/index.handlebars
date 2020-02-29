@@ -31,6 +31,16 @@
         <div class="col s6 center-align z-depth-1 orange lighten-1">
             <h3>Ordered Burgers</h3>
             <hr>
+            <ul>
+                {{#each burgers}}
+                {{#if devoured}}
+                <li>
+                    <div class="card-panel teal lighten-2">{{this.name}}</div>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+
 
         </div>
 
