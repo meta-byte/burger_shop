@@ -1,0 +1,39 @@
+{{!-- <ul>
+    {{#each burgers}}
+    <li>{{this.name}}</li>
+    {{/each}}
+</ul> --}}
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align orange lighten-1 z-depth-1 ">
+            <h1>Burger Shop</h1>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col s6 center-align z-depth-1 orange lighten-1">
+            <h3>Order a Burger</h3>
+            <hr>
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>
+                    <div class="card-panel teal lighten-2">{{this.name}} <a
+                            class="waves-effect waves btn-flat red align-right" data-id="{{this.id}}">Order</a></div>
+                </li>
+                {{/unless}}
+                {{/each}}
+            </ul>
+
+        </div>
+        <div class="col s6 center-align z-depth-1 orange lighten-1">
+            <h3>Ordered Burgers</h3>
+            <hr>
+
+        </div>
+
+    </div>
+
+</div>
