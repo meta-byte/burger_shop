@@ -1,10 +1,10 @@
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-    host: CLEARDB_DATABASE_URL,
+    host: process.env.CLEARDB_DATABASE_URL,
     port: 3306,
-    user: CLEARDB_DATABASE_USER,
-    password: CLEARDB_DATABASE_USER,
+    user: process.env.CLEARDB_DATABASE_USER,
+    password: process.env.CLEARDB_DATABASE_USER,
     database: "burgers_db"
 });
 
