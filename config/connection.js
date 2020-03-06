@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
     host: process.env.CLEARDB_DATABASE_URL,
     port: 3306,
     user: process.env.CLEARDB_DATABASE_USER,
-    password: process.env.CLEARDB_DATABASE_USER,
+    password: process.env.CLEARDB_DATABASE_PASS,
     database: "burgers_db"
 });
 
