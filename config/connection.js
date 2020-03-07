@@ -1,12 +1,19 @@
 var mysql = require('mysql');
+var connection;
 
-var connection = mysql.createConnection({
-    host: process.env.DATABASE_HOST,
-    port: 3306,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASS,
-    database: process.env.DATABASE
-});
+
+if (proces.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+}
+else {
+    connection = mysql.createConnection({
+        host: process.env.DATABASE_HOST,
+        port: 3306,
+        user: process.env.DATABASE_USER,
+        password: process.env.DATABASE_PASS,
+        database: process.env.DATABASE
+    });
+}
 
 connection.connect(function (err) {
     if (err) {
