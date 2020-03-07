@@ -3,7 +3,7 @@
 ## Overview
 
 An application that tests my ability to use the MVC model to manipulate and display information from a database to a user. 
-This application is deployed courtesy of Heroku. Click [here](https://www.linkedin.com/in/garrett-h-859007a0/) to view the live app. 
+This application is deployed courtesy of Heroku. Click [here](https://desolate-savannah-10866.herokuapp.com/) to view the live app. 
 
 ##How to Use
 * Click on the order button next to a burger to order the burger
